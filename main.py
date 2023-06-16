@@ -38,18 +38,18 @@ div.grid(row=0,column=3,padx=1,pady=1)
 # row=2
 
 seven = Button(btnframe,width=10,height=4,text="7")
-seven.grid(row=1,column=0)
+seven.grid(row=1,column=0,padx=1,pady=2)
 
 eight = Button(btnframe,width=10,height=4,text="8")
-eight.grid(row=1,column=1)
+eight.grid(row=1,column=1,padx=1,pady=2)
 
 nine = Button(btnframe,width=10,height=4,text="9")
-nine.grid(row=1,column=2)
+nine.grid(row=1,column=2,padx=1,pady=2)
 
 mul = Button(btnframe,width=10,height=4,text="*")
-mul.grid(row=1,column=3)
+mul.grid(row=1,column=3,padx=1,pady=2)
 
-
+# row 3
 
 window.mainloop()
 
