@@ -5,25 +5,31 @@ window.geometry("321x411")
 window.resizable(0,0)
 window.title("CALC BY KAMAL")
 
+def update_display(text):
+    input.set(text)
+
+
+def btn_equal():
+    try:
+        result = eval(input.get())
+        update_display(str(result))
+    except Exception as e:
+        update_display("Error")
+
 def btn_click(item):
     global expression
-    expression =expression + str(item)
-    input.set(expression)
+
 
 def btn_clr():
     global expression
-    expression = ""
-    input.set("")
 
-def btn_equal():
-    global expression
 
 def btn_mod():
     global expression
 
+
 def btn_posorneg():
     global expression
-
 
 
 expression=""
@@ -34,7 +40,7 @@ frame = Frame(window,height=60,width=320,bg="black")
 frame.pack(side=TOP)
 
 #display
-disp = Entry(frame,font=("arial",16,'bold'),textvariable=input,width=60,justify="right")
+disp = Entry(frame,font=("arial",16),textvariable=input,width=60,justify="right")
 disp.config(state="readonly")
 disp.grid(row=0,column=0)
 disp.pack(ipady=10)
