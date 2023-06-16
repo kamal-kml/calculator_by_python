@@ -35,7 +35,9 @@ def btn_mod():
 
 def btn_posorneg():
     global expression
-
+    expression = input.get()
+    result = (eval(expression) * (-1))
+    input.set(result)
 
 expression=""
 input = StringVar()
