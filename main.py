@@ -29,7 +29,9 @@ def btn_clr():
 
 def btn_mod():
     global expression
-
+    expression = input.get()
+    result = (eval(expression) / 100)
+    input.set(result)
 
 def btn_posorneg():
     global expression
