@@ -1,7 +1,7 @@
 from tkinter import *
 
 window = Tk()
-window.geometry("320x400")
+window.geometry("321x411")
 window.resizable(0,0)
 window.title("CALC BY KAMAL")
 
@@ -35,6 +35,7 @@ mod.grid(row=0,column=2,padx=1,pady=1)
 div = Button(btnframe,width=10,height=4,text="/")
 div.grid(row=0,column=3,padx=1,pady=1)
 
+
 # row=2
 
 seven = Button(btnframe,width=10,height=4,text="7")
@@ -54,30 +55,43 @@ mul.grid(row=1,column=3,padx=1,pady=1)
 # row 3
 
 four = Button(btnframe,width=10,height=4,text="4")
-four.grid(row=2,column=0)
+four.grid(row=2,column=0,padx=1,pady=1)
 
 five = Button(btnframe,width=10,height=4,text="5")
-five.grid(row=2,column=1)
+five.grid(row=2,column=1,padx=1,pady=1)
 
 six = Button(btnframe,width=10,height=4,text="6")
-six.grid(row=2,column=2)
+six.grid(row=2,column=2,padx=1,pady=1)
 
 sub = Button(btnframe,width=10,height=4,text="-")
-sub.grid(row=2,column=3)
+sub.grid(row=2,column=3,padx=1,pady=1)
 
 # row 4
 
 one = Button(btnframe,width=10,height=4,text="1")
-one.grid(row=3,column=0)
+one.grid(row=3,column=0,padx=1,pady=1)
 
 two = Button(btnframe,width=10,height=4,text="2")
-two.grid(row=3,column=1)
+two.grid(row=3,column=1,padx=1,pady=1)
 
 three = Button(btnframe,width=10,height=4,text="3")
-three.grid(row=3,column=2)
+three.grid(row=3,column=2,padx=1,pady=1)
 
 add = Button(btnframe,width=10,height=4,text="+")
-add.grid(row=3,column=3)
+add.grid(row=3,column=3,padx=1,pady=1)
+
+# row 5
+
+zero = Button(btnframe,width=22,height=4,text="0")
+zero.grid(row=4,column=0,columnspan=2,padx=1,pady=1)
+
+dot = Button(btnframe,width=10,height=4,text=".")
+dot.grid(row=4,column=2,padx=1,pady=1)
+
+equal = Button(btnframe,width=10,height=4,text="=")
+equal.grid(row=4,column=3,padx=1,pady=1)
+
+
 
 window.mainloop()
 
