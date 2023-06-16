@@ -39,6 +39,9 @@ def btn_posorneg():
     result = (eval(expression) * (-1))
     input.set(result)
 
+def change_color(Button):
+    Button.config(bg="blue")
+
 expression=""
 input = StringVar()
 
