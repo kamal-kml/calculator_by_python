@@ -24,7 +24,8 @@ def btn_click(item):
 
 def btn_clr():
     global expression
-
+    expression = ""
+    input.set("")
 
 def btn_mod():
     global expression
