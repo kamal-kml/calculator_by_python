@@ -129,4 +129,3 @@ equal.grid(row=4,column=3,padx=1,pady=1)
 
 
 window.mainloop()
-
