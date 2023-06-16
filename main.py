@@ -18,7 +18,9 @@ def btn_equal():
 
 def btn_click(item):
     global expression
-
+    expression = input.get()
+    expression = expression + str(item)
+    input.set(expression)
 
 def btn_clr():
     global expression
