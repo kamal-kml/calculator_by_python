@@ -65,5 +65,19 @@ six.grid(row=2,column=2)
 sub = Button(btnframe,width=10,height=4,text="-")
 sub.grid(row=2,column=3)
 
+# row 4
+
+one = Button(btnframe,width=10,height=4,text="1")
+one.grid(row=3,column=0)
+
+two = Button(btnframe,width=10,height=4,text="2")
+two.grid(row=3,column=1)
+
+three = Button(btnframe,width=10,height=4,text="3")
+three.grid(row=3,column=2)
+
+add = Button(btnframe,width=10,height=4,text="+")
+add.grid(row=3,column=3)
+
 window.mainloop()
 
